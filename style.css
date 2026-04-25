@@ -1,7 +1,10 @@
 body {
   font-family: sans-serif;
-  margin: 30px;
+  margin: 30px auto;
   background-color: #f5f7fa;
+  max-width: 800px;
+  line-height: 1.6;
+  padding: 10px;
 }
 
 h1 {
@@ -17,11 +20,18 @@ section {
     margin-bottom: 20px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
+
+section:hover {
+  transform: translateY(-5px);
+  transition: 0.2s;
+}
     
 h2 {
   margin-top: 0;
   color: #333333;
-  font-size: 22px
+  font-size: 22px;
+  border-left: 5px solid navy;
+  padding-left: 10px;
 }
 
 ul {
@@ -29,6 +39,6 @@ ul {
     margin-bottom: 0; 
 }
 
-li {
-  margin-bottom: 8px;
+li:last-child {
+  margin-bottom: 0;
 }
